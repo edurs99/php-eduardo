@@ -1,0 +1,34 @@
+package Exercicio_Cartao;
+
+import java.awt.geom.Arc2D;
+
+public class Balada {
+	public static void main(String[] args) {
+//		CartaoPrePago c1 c2;
+		CartaoPrePago c1 = new CartaoPrePago("123445", "Joao Carlos", 2025, 06, 1000);
+		CartaoCashBack c2 = new CartaoCashBack("11211", "Elias Maluco", 2024, 6, 1000, 0);
+		System.out.println(c1);
+		System.out.println(c2);
+		
+		c1.adicionarCredito(2000);
+		System.out.println(c1);
+		
+		
+		if (c1.comprar(100)) {
+			System.out.println("Debito nao autorizado na conta "+c1.getNomeTitular());
+		}
+			else {
+				System.out.println("Saldo insuficiente na conta " +c1.getNomeTitular());
+			}
+		
+		if (c2.comprar(1000)) {
+			System.out.println("Debito autorizado na conta "+ c2.getNomeTitular()) ;
+		}
+		else {
+			System.out.println("Saldo insuficiente na conta " +c2.getNomeTitular());
+		}
+		System.out.println(c1);
+		System.out.println(c2);
+		
+	}
+}

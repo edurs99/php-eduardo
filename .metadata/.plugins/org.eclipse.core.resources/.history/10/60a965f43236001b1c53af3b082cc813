@@ -1,0 +1,42 @@
+public class Produto {
+	private int codBarras;
+	private String nome;
+	private double preco;
+	private String departamento;
+	
+	public void mostrarProduto () {
+		System.out.println("Codigo do Produto: " +codBarras);
+		System.out.println("Nome do Produto: " +nome);
+		System.out.println("Preco do Produto: " +preco);
+		System.out.println("Departameto: " +departamento);
+	}
+	public int getCodBarras() {
+		return codBarras;
+	}
+	public void setCodBarras(int codBarras) {
+		this.codBarras = codBarras;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	public String getDepartamento() {
+		return departamento;
+	}
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+	double aplicarDesconto(double desconto) {
+		return preco = preco * desconto/100;
+	
+	}
+	
+}

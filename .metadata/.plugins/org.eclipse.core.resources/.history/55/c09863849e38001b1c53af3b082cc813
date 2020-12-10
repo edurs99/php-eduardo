@@ -1,0 +1,21 @@
+
+public class Banco {
+	public static void main(String[] args) {
+		Conta c1 = new Conta();
+		
+		c1.setNumeroConta(1234);
+		c1.setNomeTitular("Adalbeto Fonseca");
+		c1.setCpf("123.456.789-00");
+		
+		System.out.println(c1);
+		
+		ContaEspecial c2 = new ContaEspecial();
+		c2.setNomeTitular("Jose Sousa Silva");
+		c2.setNumeroConta(9876);
+		c2.setCpf("123.32122.123-00");
+		c2.setLimite(500);
+		
+		System.out.println(c2);
+		
+	}
+}

@@ -1,0 +1,10 @@
+package model;
+
+public class Empreiteiro extends Funcionario {
+	
+	public double valorEmpreita;
+	
+	
+
+	
+}

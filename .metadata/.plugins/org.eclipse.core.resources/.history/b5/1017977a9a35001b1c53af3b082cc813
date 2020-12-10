@@ -1,0 +1,18 @@
+public class Produto {
+	int codBarras;
+	String nome;
+	double preco;
+	String departamento;
+	
+	void mostrarProduto () {
+		System.out.println("Codigo do Produto: " +codBarras);
+		System.out.println("Nome do Produto: " +nome);
+		System.out.println("Preco do Produto: " +preco);
+		System.out.println("Departameto: " +departamento);
+	}
+	double aplicarDesconto(int desconto) {
+		return preco = preco * desconto/100;
+	
+	}
+	
+}

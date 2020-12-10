@@ -1,0 +1,13 @@
+
+public class Bomba {
+	private String nome;
+	private double valor_litro;
+	private double qtde_litros;
+	private double valor_total;
+
+	public double abastecer_litros(double litros,double preco_litro) {
+		valor_total = litros * preco_litro;
+				return valor_total;
+	}
+}
+

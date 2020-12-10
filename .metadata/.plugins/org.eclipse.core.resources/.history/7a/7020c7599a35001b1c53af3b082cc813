@@ -1,0 +1,32 @@
+
+public class Loja {
+	public static void main(String[] args) {
+		Produto item1 = new Produto();
+		Produto item2 = new Produto();
+		Produto item3 = new Produto();
+
+		item1.codBarras = 1; 
+		item1.nome = "sabao";
+		item1.departamento = "Limpeza";
+		item1.preco = 10;
+		
+		item2.codBarras = 2;
+		item2.nome = "Cerveja";
+		item2.departamento = "Bebidas";
+		item2.preco = 5;
+		
+		item3.codBarras = 3;
+		item3.nome = "Pao";
+		item3.departamento = "Padaria";
+		item3.preco = 12;
+		
+		System.out.println("Lista de Produtos");
+		item1.mostrarProduto();
+		System.out.println("==================");
+		item2.mostrarProduto();
+		System.out.println("==================");
+		item3.mostrarProduto();
+		
+	
+	}	
+}

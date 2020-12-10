@@ -1,0 +1,39 @@
+package userinterface;
+
+import model.Chefe;
+import model.Comissionado;
+import model.Empreiteiro;
+import model.Funcionario;
+import model.Horista;
+
+public class FolhaDePagamento {
+	public static void main(String[] args) {
+	
+		Funcionario funcionarios[];
+		funcionarios = new Funcionario[7];
+		
+		funcionarios[0] = new Empreiteiro(1234, "Empreiteiro 01 ", 3500.00);
+		funcionarios[1] = new Chefe(33333, "Joao", 1000, 200, 500);
+		funcionarios[2] = new Horista(33333, "Ana", 200, 160);
+		funcionarios[4] = new Comissionado(222, "nome",200 ,240);
+		funcionarios[5] = new Comissionado(221, "augusto",100 ,340);
+		funcionarios[6] = new Horista(334443, "Priscila", 1200, 160);
+
+		
+		for (int cont = 0; cont<funcionarios.length; cont ++) {
+			System.out.println("Nome: " + funcionarios[cont].getNome() + " Funcional: " + funcionarios[cont].getNumRegistro() + " Salario: R$" + funcionarios[cont].calcularSalario());
+			cont = cont + 1;
+		}
+//		Funcionario f = new Empreiteiro(1234, "Empreiteiro 01 ", 3500.00);
+//		Funcionario xf = new Chefe(33333, "Joao", 1000, 200, 500);
+//		Funcionario horeiro = new Horista(33333, "Ana", 200, 160);
+//		Funcionario comm = new Comissionado(222, "nome",200 ,240);
+//		System.out.println(f.calcularSalario());
+//		System.out.println(xf.calcularSalario());
+//		System.out.println(horeiro.calcularSalario());
+//		System.out.println(comm.calcularSalario());
+		
+		
+	}
+
+}

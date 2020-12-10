@@ -1,0 +1,9 @@
+import jdk.nashorn.internal.runtime.linker.JavaAdapterFactory;.
+public class Prova {
+	public static void main(String[] args) {
+		
+		int pontos = 0;
+		Scanner teclado 
+
+	}
+}

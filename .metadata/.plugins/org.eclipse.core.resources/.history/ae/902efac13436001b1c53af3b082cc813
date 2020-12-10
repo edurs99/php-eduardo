@@ -1,0 +1,28 @@
+public class banco {
+	public static void main(String[] args) {
+		conta_bancaria c1, c2;
+		
+		c1 = new conta_bancaria();
+		c2 = new conta_bancaria();
+		
+		c1.setConta(12345);
+		c1.setNome_titular("Eduardo Rodrigues");
+		c1.setCpf("333.333333-33");
+		c1.setSaldo(100);
+		
+		c2.setConta(344556);
+		c2.setNome_titular("Bill Gates");
+		c2.setCpf("444.444.44-44");
+		c2.setSaldo(100000.00);
+		
+		System.out.println(c1.exibirProduto());
+		System.out.println(c2.exibirProduto());
+		
+		System.out.println("Realizando un deposito");
+		
+		c1.sacar(20);
+		System.out.println(c1.exibirProduto());
+		
+		
+	}
+}

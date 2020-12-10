@@ -1,0 +1,32 @@
+package model;
+
+public class Comissionado extends Funcionario {
+		private Float salarioBase;
+		private Float commissao;
+		
+		
+		public Comissionado(int numRegistro, String nome, Float salarioBase, Float commissao) {
+			super(numRegistro, nome);
+			this.salarioBase = salarioBase;
+			this.commissao = commissao;
+		}
+		public Float getSalarioBase() {
+			return salarioBase;
+		}
+		public void setSalarioBase(Float salarioBase) {
+			this.salarioBase = salarioBase;
+		}
+		public Float getCommissao() {
+			return commissao;
+		}
+		public void setCommissao(Float commissao) {
+			this.commissao = commissao;
+		}
+		
+		@Override
+		public double calcularSalario() {
+			
+			return this.salarioBase = this.salarioBase * this.commissao/100;
+		}
+		
+}

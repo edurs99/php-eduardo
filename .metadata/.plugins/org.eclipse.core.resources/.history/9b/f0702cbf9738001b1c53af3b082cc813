@@ -1,0 +1,50 @@
+
+public class Loja {
+	public static void main(String[] args) {
+		Produto item1 = new Produto();
+		Produto item2 = new Produto();
+		Produto item3 = new Produto();
+
+		item1.setCodBarras(1);
+		item1.setNome("sabao");
+		item1.setDepartamento("Limpeza");
+		item1.setPreco(10);
+		
+		item2.setCodBarras(2); 
+		item2.setNome("Cerveja"); 
+		item2.setDepartamento("Bebidas");
+		item2.setPreco(5);
+		
+		item3.setCodBarras(3);
+		item3.setNome("Pão");
+		item3.setDepartamento("Parabens");
+		item3.setPreco(12);
+		
+		System.out.println("Lista de Produtos");
+		item1.mostrarProduto();
+		System.out.println("==================");
+		item2.mostrarProduto();
+		System.out.println("==================");
+		item3.mostrarProduto();
+		
+		double desconto1;
+		double desconto2;
+		double desconto3;
+	
+		
+		desconto1 =  item1.aplicarDesconto(25);
+		System.out.println("Desconto de 10% no produto " +item1.getNome() + " " +desconto1);
+
+		
+		desconto2 =  item2.aplicarDesconto(50);
+		System.out.println("Desconto de 50% no produto " +item2.getNome() + " " +desconto2);
+
+		desconto3 =  item3.aplicarDesconto(50);
+		System.out.println("Desconto de 30% no produto " + item3.getNome() + " " + desconto3);
+
+		
+		
+		
+		
+	}	
+}

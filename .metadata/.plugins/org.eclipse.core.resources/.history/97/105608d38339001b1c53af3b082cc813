@@ -1,0 +1,93 @@
+package Exercicio_Cartao;
+
+import java.util.ArrayList;
+
+import model.Chefe;
+import model.Comissionado;
+import model.Empreiteiro;
+import model.Funcionario;
+import model.Horista;
+
+public class Balada {
+	public static void main(String[] args) {
+//		CartaoPrePago c1 c2;
+		
+//		
+//	ArrayList<Funcionario> lista; 
+//		
+//		// agora preciso instanciar
+//		lista = new ArrayList<Funcionario>();
+//		
+//		lista.add(new Chefe(1001, "Priscila Coelho", 8500.00, 15.00, 1200.00));
+//		lista.add(new Comissionado(1002, "Jose de Almeida", 3850.00, 22.00));
+//		lista.add(new Comissionado(1003, "Fabio Alcantara", 2930.00, 31.00));
+//		lista.add(new Horista(1004, "Jussara Nunes", 180, 75.32));
+//		lista.add(new Horista(1005, "Pedro Neves", 150, 72.47));
+//		lista.add(new Empreiteiro(1006, "Waldemar Lopes", 4250.00));
+//		lista.add(new Empreiteiro(1007, "Rogerio Silva", 3920.00));
+		
+		ArrayList<CartaoPrePago> lista;
+		
+		lista = new ArrayList<CartaoPrePago>();
+		lista.add(new CartaoPrePago("123445", "Joao Carlos", 2025, 6, 0));
+		lista.add(new CartaoCashBack("11211", "GOLD", 2024, 6, 0, 0));
+		lista.add(new CartaoCashBack("11212", "SILVER", 2024, 6, 0, 1));
+		lista.add(new CartaoCashBack("11213", "BRONZE", 2024, 6, 0, 2));
+		
+		
+		
+		//CartaoPrePago c1 = new CartaoPrePago("123445", "Joao Carlos", 2025, 6, 0);
+		//CartaoPrePago c2 = new CartaoCashBack("11211", "GOLD", 2024, 6, 0, 0);
+		//CartaoPrePago c3 = new CartaoCashBack("11212", "SILVER", 2024, 6, 0, 1);
+		//CartaoPrePago c4 = new CartaoCashBack("11213", "BRONZE", 2024, 6, 0, 2);
+		
+		for (int pos=0; pos < lista.size(); pos++) {
+			lista.get(pos).adicionarCredito(1000);
+			System.out.println(lista.get(pos));
+			
+		}
+		
+		//c1.adicionarCredito(1000);
+		//c2.adicionarCredito(1000);
+		//c3.adicionarCredito(1000);
+		//c4.adicionarCredito(1000);
+		
+		//System.out.println(c1);
+		//System.out.println(c2);
+		//System.out.println(c3);
+	//	System.out.println(c4);
+		
+		
+		System.out.println("==============================");
+		System.out.println("==============================");
+		
+		
+		//c1.comprar(100);
+	//	c2.comprar(100);
+	//	c3.comprar(100);
+	//	c4.comprar(100);
+		
+	//	System.out.println(c1);
+	//	System.out.println(c2);
+	//	System.out.println(c3);
+	//	System.out.println(c4);
+		
+		
+//		if (c1.comprar(10000)) {
+//			System.out.println("Debito autorizado na conta "+c1.getNomeTitular());
+//		}
+//			else {
+//				System.out.println("Saldo insuficiente na conta " +c1.getNomeTitular());
+//			}
+//		
+//		if (c2.comprar(1000)) {
+//			System.out.println("Debito autorizado na conta "+ c2.getNomeTitular()) ;
+//		}
+//		else {
+//			System.out.println("Saldo insuficiente na conta " +c2.getNomeTitular());
+//		}
+//		System.out.println(c1);
+//		System.out.println(c2);
+//		
+	}
+}
